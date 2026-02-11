@@ -67,6 +67,45 @@ El modelo organizacional de CommonKADS se estructura mediante un conjunto de pla
 
 El **OM-1** establece los objetivos estratégicos de la organización y su contexto interno y externo. El **OM-2** analiza los procesos del negocio, permitiendo identificar cuellos de botella o procesos críticos. El **OM-3** descompone dichos procesos en tareas específicas, mientras que el **OM-4** asigna estas tareas a agentes responsables. Finalmente, el **OM-5** integra el análisis para detectar problemas, riesgos y oportunidades de mejora.
 
+```mermaid
+graph TD
+    A["Modelo Organizacional<br/>CommonKADS"] --> B[OM-1: Contexto]
+    A --> C[OM-2: Procesos]
+    A --> D[OM-3: Tareas]
+    A --> E[OM-4: Agentes]
+    A --> F[OM-5: Problemas y<br/>Oportunidades]
+    
+    B --> B1[Objetivos estratégicos]
+    B --> B2[Contexto interno/externo]
+    
+    C --> C1[Procesos del negocio]
+    C --> C2[Identificación de<br/>cuellos de botella]
+    
+    D --> D1[Descomposición<br/>de procesos]
+    D --> D2[Tareas específicas]
+    
+    E --> E1[Actores humanos]
+    E --> E2[Sistemas involucrados]
+    E --> E3[Asignación de<br/>responsabilidades]
+    
+    F --> F1[Detección de problemas]
+    F --> F2[Evaluación de riesgos]
+    F --> F3[Oportunidades de mejora]
+    
+    C -.->|alimenta| D
+    D -.->|asigna a| E
+    B -.->|guía| C
+    C -.->|identifica| F
+    D -.->|identifica| F
+    E -.->|identifica| F
+    
+    style A fill:#e1f5ff,stroke:#0066cc,stroke-width:3px
+    style B fill:#fff4e6,stroke:#ff9800,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style D fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+    style E fill:#fff3e0,stroke:#ff6f00,stroke-width:2px
+    style F fill:#ffebee,stroke:#f44336,stroke-width:2px
+```
 ### 4.2 Utilidad del modelo organizacional
 
 La principal utilidad del modelo organizacional es asegurar que los sistemas basados en conocimiento respondan a necesidades reales. Permite:
