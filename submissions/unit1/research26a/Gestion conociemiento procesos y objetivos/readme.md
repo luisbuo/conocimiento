@@ -76,6 +76,25 @@ El ciclo de gestión del conocimiento describe el flujo recurrente del conocimie
 
 El ciclo se refuerza a sí mismo: el conocimiento aplicado a menudo conduce a nuevas ideas, que reinician el ciclo.
 
+``` mermaid
+
+graph LR
+    A[1. Creación de<br/>Conocimiento] --> B[2. Captura de<br/>Conocimiento]
+    B --> C[3. Organización del<br/>Conocimiento]
+    C --> D[4. Compartir<br/>Conocimiento]
+    D --> E[5. Aplicación del<br/>Conocimiento]
+    E --> F[6. Revisión del<br/>Conocimiento]
+    F --> A
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#ffe1f5
+    style D fill:#e1ffe1
+    style E fill:#f5e1ff
+    style F fill:#ffe1e1
+
+```
+
 ## Objetivo
 
 Algunos objetivos de la Gestión del conocimiento según los autores anteriormente consultados son los siguientes:
